@@ -1,0 +1,1 @@
+python3 data_generator/generator.py -i ./data2/ -b ./data3/ -o ./data2/

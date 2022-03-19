@@ -15,7 +15,14 @@ python3 data_generator/generator.py -i scan_images_path -b background_images_pat
 python3 train.py
 ```
 
+
+
+
+
+
+
 ## how to eval
+
 1. change `model_path` and `img_path` in `predict.py`
 2. use flow scipt to train
 ```python
