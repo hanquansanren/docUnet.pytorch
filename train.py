@@ -2,10 +2,13 @@
 # @Time    : 2018/6/11 15:54
 # @Author  : zhoujun
 import torch
+import ssl
 import torch.utils.data as Data
 from torchvision import transforms
 from MyDataSet import ImageData
 from models.deeplab_models.deeplab import DeepLab  # 一个deeplab v3+网络
+# open ssl support
+ssl._create_default_https_context = ssl._create_unverified_context # 用于支持ssl证书访问
 import time
 import config
 from tensorboardX import SummaryWriter
